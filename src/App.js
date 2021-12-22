@@ -24,16 +24,15 @@ function App() {
         ))}
       </div>
 
-      <button
-        className="addItemButton"
-        onClick={(e) => {
-          handleClick(e);
-        }}
-      >
+      <button className="addItemButton" onClick={handleClick}>
         Add item
       </button>
       {showModal && (
-        <Modal setShowModal={setShowModal} setItemList={setItemList} />
+        <Modal
+          setShowModal={setShowModal}
+          setItemList={setItemList}
+          itemList={itemList}
+        />
       )}
     </div>
   );

@@ -16,14 +16,19 @@
   padding: 3px;
 }
 p {
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+h2 {
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
 .addItemButton {
   margin-top: 25px;
   padding: 5px;
   border-radius: 5px;
-  width: 262.5px;
+  width: 341.99px;
   height: 42.5px;
   color: white;
   background-color: #01a8ff;

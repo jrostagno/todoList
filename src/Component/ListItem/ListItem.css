@@ -1,6 +1,6 @@
 .listItemContent {
   padding: 5px;
-  width: 250px;
+  width: 330px;
   height: 30px;
   background-color: white;
   border-radius: 5px;
@@ -13,4 +13,9 @@
   background-color: white;
   border: none;
   font-style: italic;
+}
+
+.listItemContent span {
+  font-weight: 600;
+  font-family: "Baloo Bhaijaan 2", cursive;
 }

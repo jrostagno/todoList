@@ -13,19 +13,20 @@
 .modalConteiner {
   background-color: white;
   border-radius: 10px;
-  width: 220px;
-  height: 140.67px;
+  width: 280px;
+  height: 155.67px;
 }
 
 .modalConteiner button {
-  width: 75px;
-  height: 21.33px;
+  width: 120px;
+  height: 29.97px;
   margin-top: 12px;
+
   font-size: xx-small;
 }
 
 .add {
-  margin-left: 18px;
+  margin-left: 16.96px;
   color: white;
   background-color: #b8d2f1;
   border: none;
@@ -40,8 +41,10 @@
 input {
   border: 1.5px solid #1c70d1;
   border-radius: 2px;
+  width: 250px;
+  height: 25px;
 }
 
-h2 {
+h3 {
   font-family: "Baloo Bhaijaan 2", cursive;
 }
