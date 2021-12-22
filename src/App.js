@@ -1,12 +1,16 @@
 import "./App.css";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Modal from "./Component/Modal/Modal";
 import ListItem from "./Component/ListItem/ListItem";
 
 function App() {
   const [itemList, setItemList] = useState([]);
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("Lista de Compras", JSON.stringify(itemList));
+  }, [itemList]);
 
   function handleClick() {
     setShowModal(true);

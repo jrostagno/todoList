@@ -55,7 +55,10 @@ export default function Modal({ setShowModal, setItemList, itemList }) {
           <button className="close" onClick={handleClose}>
             Close
           </button>
-          <button className="add" onClick={handleSubmit}>
+          <button
+            className={`${input ? "btnready" : "add"}`}
+            onClick={handleSubmit}
+          >
             Add
           </button>
         </div>

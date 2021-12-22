@@ -21,8 +21,6 @@
   width: 120px;
   height: 29.97px;
   margin-top: 12px;
-
-  font-size: xx-small;
 }
 
 .add {
@@ -30,6 +28,17 @@
   color: white;
   background-color: #b8d2f1;
   border: none;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.btnready {
+  background-color: #01a8ff;
+  margin-left: 16.96px;
+  color: white;
+  border: none;
+  font-size: medium;
+  font-weight: 500;
 }
 
 .close {
@@ -43,6 +52,10 @@ input {
   border-radius: 2px;
   width: 250px;
   height: 25px;
+}
+
+input:focus {
+  border: 1.5px solid #1c70d1;
 }
 
 h3 {
