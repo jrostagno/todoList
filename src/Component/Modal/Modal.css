@@ -1,0 +1,47 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalConteiner {
+  background-color: white;
+  border-radius: 10px;
+  width: 220px;
+  height: 140.67px;
+}
+
+.modalConteiner button {
+  width: 75px;
+  height: 21.33px;
+  margin-top: 12px;
+  font-size: xx-small;
+}
+
+.add {
+  margin-left: 18px;
+  color: white;
+  background-color: #b8d2f1;
+  border: none;
+}
+
+.close {
+  background-color: #e3e7e8;
+  border: none;
+  color: black;
+}
+
+input {
+  border: 1.5px solid #1c70d1;
+  border-radius: 2px;
+}
+
+h2 {
+  font-family: "Baloo Bhaijaan 2", cursive;
+}

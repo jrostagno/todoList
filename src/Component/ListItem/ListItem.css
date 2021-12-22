@@ -1,0 +1,16 @@
+.listItemContent {
+  padding: 5px;
+  width: 250px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listItemContent button {
+  background-color: white;
+  border: none;
+  font-style: italic;
+}
