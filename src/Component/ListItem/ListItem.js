@@ -8,7 +8,15 @@ export default function ListItem({ item, setItemList }) {
 
   return (
     <div className="listItemContent">
-      <span>{item}</span> <button onClick={handleDelete}>delete</button>
+      <span>{item}</span>{" "}
+      <button
+        onClick={() => {
+          if (window.confirm("Are you sure you want to delete this item?"))
+            handleDelete();
+        }}
+      >
+        delete
+      </button>
     </div>
   );
 }

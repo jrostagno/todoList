@@ -21,6 +21,7 @@ p {
 }
 
 h2 {
+  margin-top: 100px;
   font-family: "Baloo Bhaijaan 2", cursive;
 }
 
@@ -28,7 +29,7 @@ h2 {
   margin-top: 25px;
   padding: 5px;
   border-radius: 5px;
-  width: 341.99px;
+  width: 400.99px;
   height: 42.5px;
   color: white;
   background-color: #01a8ff;

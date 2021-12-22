@@ -1,6 +1,6 @@
 .listItemContent {
   padding: 5px;
-  width: 330px;
+  width: 390.99px;
   height: 30px;
   background-color: white;
   border-radius: 5px;
@@ -13,6 +13,7 @@
   background-color: white;
   border: none;
   font-style: italic;
+  box-shadow: 0.5px 0.5px 0.5px #e0e0e0;
 }
 
 .listItemContent span {
