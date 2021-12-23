@@ -1,16 +1,21 @@
 import "./App.css";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Modal from "./Component/Modal/Modal";
 import ListItem from "./Component/ListItem/ListItem";
+import loading from "../src/assets/loading.gif";
 
 function App() {
-  const [itemList, setItemList] = useState([]);
+  const [itemList, setItemList] = useState(
+    JSON.parse(localStorage.getItem("List")) || []
+  );
   const [showModal, setShowModal] = useState(false);
 
-  useEffect(() => {
-    localStorage.setItem("Lista de Compras", JSON.stringify(itemList));
-  }, [itemList]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  // useEffect(() => {
+  //   localStorage.setItem("List", JSON.stringify(itemList));
+  // }, [itemList]);
 
   function handleClick() {
     setShowModal(true);
@@ -22,11 +27,22 @@ function App() {
       <p>
         <span className="number">{itemList.length}</span>items(s)
       </p>
-      <div className="contentList">
-        {itemList.map((item, i) => (
-          <ListItem item={item} key={i} setItemList={setItemList} />
-        ))}
-      </div>
+      {isLoading ? (
+        <div>
+          <img className="loading" src={loading} alt="Loading" />
+        </div>
+      ) : (
+        <div className="contentList">
+          {itemList.map((item, i) => (
+            <ListItem
+              item={item}
+              key={i}
+              setItemList={setItemList}
+              setIsLoading={setIsLoading}
+            />
+          ))}
+        </div>
+      )}
 
       <button className="addItemButton" onClick={handleClick}>
         Add item
@@ -36,6 +52,7 @@ function App() {
           setShowModal={setShowModal}
           setItemList={setItemList}
           itemList={itemList}
+          setIsLoading={setIsLoading}
         />
       )}
     </div>

@@ -48,14 +48,14 @@
 }
 
 input {
-  border: 1.5px solid #1c70d1;
+  border: 1.5px solid #1c70d1 !important;
   border-radius: 2px;
   width: 250px;
   height: 25px;
 }
 
 input:focus {
-  border: 1.5px solid #1c70d1;
+  border: 1.5px solid #1c70d1 !important;
 }
 
 h3 {

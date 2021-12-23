@@ -7,6 +7,7 @@
   border: 1px solid whitesmoke;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0.5px 0.5px 0.5px #e0e0e0;
 }
 
 .listItemContent button {
@@ -19,4 +20,11 @@
 .listItemContent span {
   font-weight: 600;
   font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.delete {
+  height: 16px;
+  width: 16px;
+  margin-top: 7.5px;
+  margin-right: 3.5px;
 }

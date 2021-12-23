@@ -1,8 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import "./Modal.css";
+import { addItem } from "../../Api";
 
-export default function Modal({ setShowModal, setItemList, itemList }) {
+export default function Modal({
+  setShowModal,
+  setItemList,
+  itemList,
+  setIsLoading,
+}) {
   const [input, setInput] = useState("");
 
   function validate(input) {
@@ -22,7 +28,7 @@ export default function Modal({ setShowModal, setItemList, itemList }) {
     setInput(e.target.value);
   }
 
-  function handleSubmit() {
+  async function handleSubmit() {
     const error = validate(input);
 
     if (error === 2) {
@@ -30,8 +36,13 @@ export default function Modal({ setShowModal, setItemList, itemList }) {
     } else if (error === 1) {
       alert("Dicha tarea ya se encuentra listada");
     } else if (!error) {
-      setItemList((items) => items.concat(input));
+      setIsLoading(true);
+      setShowModal(false);
+      const newlist = await addItem(input);
+
+      setItemList(newlist);
       handleClose();
+      setIsLoading(false);
     }
   }
 
@@ -40,6 +51,8 @@ export default function Modal({ setShowModal, setItemList, itemList }) {
       handleSubmit();
     }
   }
+
+  const isDisable = input === "" || validate(input) === 1;
 
   return (
     <div className="modal">
@@ -56,8 +69,9 @@ export default function Modal({ setShowModal, setItemList, itemList }) {
             Close
           </button>
           <button
-            className={`${input ? "btnready" : "add"}`}
+            className={`${isDisable ? "add" : "btnready"}`}
             onClick={handleSubmit}
+            disabled={isDisable}
           >
             Add
           </button>
