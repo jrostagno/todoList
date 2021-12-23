@@ -10,8 +10,7 @@ export default function ListItem({ item, setItemList, setIsLoading }) {
 
     setItemList(newList);
     setIsLoading(false);
-    // setItemList((itemList) => itemList.filter((el) => el !== item));
-  }
+  
 
   return (
     <div className="listItemContent">
@@ -25,14 +24,6 @@ export default function ListItem({ item, setItemList, setIsLoading }) {
             handleDelete();
         }}
       />
-      {/* <button
-        onClick={() => {
-          if (window.confirm("Are you sure you want to delete this item?"))
-            handleDelete();
-        }}
-      >
-        delete
-      </button> */}
     </div>
   );
 }
