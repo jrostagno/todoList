@@ -8,6 +8,12 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0.5px 0.5px 0.5px #e0e0e0;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.listItemContent:hover {
+  background-color: rgb(206, 200, 200);
 }
 
 .listItemContent button {
@@ -23,8 +29,8 @@
 }
 
 .delete {
-  height: 16px;
-  width: 16px;
-  margin-top: 7.5px;
-  margin-right: 3.5px;
+  height: 18.5px;
+  width: 18.5px;
+
+  cursor: pointer;
 }

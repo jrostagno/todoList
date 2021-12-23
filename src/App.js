@@ -13,10 +13,6 @@ function App() {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  // useEffect(() => {
-  //   localStorage.setItem("List", JSON.stringify(itemList));
-  // }, [itemList]);
-
   function handleClick() {
     setShowModal(true);
   }
@@ -25,7 +21,7 @@ function App() {
     <div className="App">
       <h2>Supermarket List</h2>
       <p>
-        <span className="number">{itemList.length}</span>items(s)
+        <span className="number">{itemList.length}</span>item(s)
       </p>
       {isLoading ? (
         <div>

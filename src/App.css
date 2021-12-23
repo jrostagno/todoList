@@ -31,14 +31,15 @@ h2 {
 }
 
 .addItemButton {
-  margin-top: 25px;
+  margin-top: 12px;
   padding: 5px;
   border-radius: 5px;
-  width: 400.99px;
-  height: 42.5px;
+  width: 402.99px;
+  height: 42px;
   color: white;
   background-color: #01a8ff;
   font-size: medium;
+  border: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {

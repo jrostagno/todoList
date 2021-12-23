@@ -55,15 +55,10 @@ export default function Modal({
   const isDisable = input === "" || validate(input) === 1;
 
   return (
-    <div className="modal">
+    <div className="modal" onKeyPress={handleKeyPress}>
       <div className="modalConteiner">
         <h3>Add item</h3>
-        <input
-          type="text"
-          onChange={(e) => handleChange(e)}
-          autoFocus
-          onKeyPress={handleKeyPress}
-        ></input>
+        <input type="text" onChange={(e) => handleChange(e)} autoFocus></input>
         <div className="botonBox">
           <button className="close" onClick={handleClose}>
             Close
