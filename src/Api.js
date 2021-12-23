@@ -23,7 +23,7 @@ export const removeItem = (item) => {
 // MANEJO LOCAL STORAGE
 
 export const getListApi = () => {
-  return JSON.parse(localStorage.getItem("List"));
+  return JSON.parse(localStorage.getItem("List")) || [];
 };
 
 export const addItemApi = (item) => {
