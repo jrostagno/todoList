@@ -25,6 +25,11 @@ h2 {
   font-family: "Baloo Bhaijaan 2", cursive;
 }
 
+.loading {
+  width: 200px;
+  height: 100px;
+}
+
 .addItemButton {
   margin-top: 25px;
   padding: 5px;

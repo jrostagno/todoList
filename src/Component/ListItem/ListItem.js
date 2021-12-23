@@ -10,8 +10,7 @@ export default function ListItem({ item, setItemList, setIsLoading }) {
 
     setItemList(newList);
     setIsLoading(false);
-  
-
+  }
   return (
     <div className="listItemContent">
       <span>{item}</span>
